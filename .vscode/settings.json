@@ -1,0 +1,14 @@
+{
+    "python.defaultInterpreter": "/home/lvfbuilder/lgapp/.venv/bin/python3",
+    "python.pythonPath": "/home/lvfbuilder/lgapp/.venv/bin/python3",
+    "python.terminal.activateEnvironment": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true
+    },
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

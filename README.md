@@ -1,0 +1,2 @@
+# lgapp
+Labgrid testing + GUI

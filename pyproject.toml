@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lgapp"
+version = "1.0.0"
+description = "LGApp: GUI for Labgrid"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Mahyar Shariat", email = "shariatmahyar@gmail.com"}
+]
+dependencies = [
+  "nicegui",
+  "pytest",
+  "pytest-html",
+  "labgrid",
+  "tortoise-orm",
+  "weasyprint",
+  "junit-xml",
+  "junit2html",
+  "platformdirs"
+]
+
+[project.scripts]
+lgapp = "lgapp:main_without_reload"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lgapp"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/lgapp",
+    "/README.md",
+    "/LICENSE",
+]
