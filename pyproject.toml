@@ -7,6 +7,7 @@ name = "lgapp"
 version = "1.0.0"
 description = "LGApp: GUI for Labgrid"
 readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
     {name = "Mahyar Shariat", email = "shariatmahyar@gmail.com"}
@@ -31,7 +32,7 @@ packages = ["lgapp"]
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/lgapp",
-    "/README.md",
-    "/LICENSE",
+    "lgapp",
+    "README.md",
+    "LICENSE",
 ]
